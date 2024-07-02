@@ -32,12 +32,12 @@ class _LoginScreenState extends State<LoginScreen> {
 
      Future<AuthResponse>_googleSignIn()async{
 
-      const webClientId='727627401206-q06evuc89o7cesfrtk4dv09mbsql725a.apps.googleusercontent.com';
+      const webClientId='397778344920-3t2orbsr0abh424ie0l2f9o60438ieqj.apps.googleusercontent.com';
 
-      const AndroidClientId='727627401206-dsgn2h23vbit31psrcdqpe28f37k3kii.apps.googleusercontent.com';
+      const andoridClientId='397778344920-5qn8k08s3nclhmelc5e7bjvrmbutgcj9.apps.googleusercontent.com';
 
       final GoogleSignIn googleSignIn=GoogleSignIn(
-        clientId: AndroidClientId,
+        clientId: andoridClientId,
         serverClientId: webClientId
       );
 
@@ -93,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           width: 20,
                         ),
                         onPressed: () {
-                          GoogleSignIn();
+                          _googleSignIn();
                         },
                         label: const Text("Sign-In with Google"),
                       ),
